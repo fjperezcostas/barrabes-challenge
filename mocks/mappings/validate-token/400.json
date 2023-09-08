@@ -1,0 +1,10 @@
+{
+    "request": {
+        "url": "/signUpRequest/check?token=token400",
+        "method": "GET"
+    },
+    "response": {
+        "status": 400,
+        "fixedDelayMilliseconds": 500
+    }
+}

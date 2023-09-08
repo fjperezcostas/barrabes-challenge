@@ -1,0 +1,11 @@
+{
+    "request": {
+        "url": "/signupRequest/save",
+        "method": "POST",
+        "bodyPatterns" : [{"matchesJsonPath" : "$[?(@.username == 'user500@mail.net')]"}]
+    },
+    "response": {
+        "status": 500,
+        "fixedDelayMilliseconds": 500
+    }
+}

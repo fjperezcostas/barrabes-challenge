@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  envoy:
+    container_name: mocked-http-server
+    image: wiremock/wiremock
+    volumes:
+      - ./mappings:/home/wiremock/mappings
+    network_mode: host
+    command: --enable-stub-cors

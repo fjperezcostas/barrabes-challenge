@@ -1,0 +1,11 @@
+{
+    "request": {
+        "url": "/profile",
+        "method": "POST",
+        "bodyPatterns" : [{"matchesJsonPath" : "$[?(@.name == 'user200')]"}]
+    },
+    "response": {
+        "status": 204,
+        "fixedDelayMilliseconds": 500
+    }
+}
